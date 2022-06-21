@@ -22,5 +22,6 @@ function solution(phone_number) {
   str = phone_number.replace(/[0-9]/g, "*").slice(0, -4); //숫자 모두 *로 치환.인덱스 0부터 마지막 4자리 전까지 slice한다.
   temp = phone_number.substr(phone_number.length - 4); //마지막 4글자는 그대로 보존한다.
 
-  return str + temp; //문자열 합쳐서 결과 출력한다.
+  return str + temp;
+  //문자열 합쳐서 결과 출력한다.
 }
