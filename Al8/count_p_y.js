@@ -28,7 +28,7 @@ s	answer
 
 function solution(s) {
   let str = s.toLowerCase(); // 소문자로 치환
-  let count = 0;
+  
   let p_count = 0;
   let y_count = 0;
 
