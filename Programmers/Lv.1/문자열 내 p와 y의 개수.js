@@ -28,7 +28,7 @@ s	answer
 
 function solution(s) {
   let str = s.toLowerCase(); // 소문자로 치환
-  
+
   let p_count = 0;
   let y_count = 0;
 
@@ -65,12 +65,11 @@ function solution(s) {
 //   }
 //i는 대소문자 상관없이 g는 전부 찾으라는 플래그
 
+// match()와 함께 글로벌(g) 및 대/소문자 무시(i) 플래그 사용하기
+// 다음 예제는 글로벌(g) 및 대/소문자 무시(i) 플래그를 사용하여  match()를 사용하는 방법을 보여준다.
+// A부터 E 까지의 모든 문자와 a부터 e 까지의 모든 문자가 배열의 각 원소를 구성하는 형태로 반환된다.
 
-match()와 함께 글로벌(g) 및 대/소문자 무시(i) 플래그 사용하기
-다음 예제는 글로벌(g) 및 대/소문자 무시(i) 플래그를 사용하여  match()를 사용하는 방법을 보여준다. 
-A부터 E 까지의 모든 문자와 a부터 e 까지의 모든 문자가 배열의 각 원소를 구성하는 형태로 반환된다.
-
-var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 var regexp = /[A-E]/gi;
 var matches_array = str.match(regexp);
 
