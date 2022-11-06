@@ -20,6 +20,8 @@ function solution(a, b) {
   return new Date(2016, a - 1, b).toString().slice(0, 3).toUpperCase();
 }
 
+solution(5, 24);
+
 //    new Date 데이트 생성자 함수에 연,월,일,시 분, 초, 밀리초를 의미하는 숫자를 인수로 전달하면
 //    지정된 날짜와 시간을 나타내는 Date 객체를 반환한다.
 //    이때 연,월은 반드시 지정해야 한다.
